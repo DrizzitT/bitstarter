@@ -10,7 +10,7 @@ fs.readFile('/home/ubuntu/bitstarter/index.html', function (err,data) {
 });
 
 app.get('/', function(request, response) {
-  response.send(text);
+  response.send('Hello World');
 });
 
 var port = process.env.PORT || 5000;
