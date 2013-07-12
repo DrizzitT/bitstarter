@@ -10,7 +10,7 @@ fs.readFileSync('/bitstarter/index.html', function (err, data){
 });
  
 app.get('/', function(request, response) {
-  response.send(buffer);
+  response.send(buffer.tostring('utf-8'));
 });
 
 var port = process.env.PORT || 5000;
