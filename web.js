@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-require('fs'); 
+var fs = require('fs'); 
 
 var text = fs.readFileSync('/home/ubuntu/bitstarter/index.html').toString('utf-8');
 
