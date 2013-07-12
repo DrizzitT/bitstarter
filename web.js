@@ -2,12 +2,13 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var text = '';
+/*var text = '';
 
-text = fs.readFileSync('/home/ubuntu/bitstarter/index.html').toString('utf-8');
+ text = fs.readFileSync('/home/ubuntu/bitstarter/index.html').toString('utf-8');
+*/
 
 app.get('/', function(request, response) {
-  response.send(text);
+  response.send('Hello World');
 });
 
 var port = process.env.PORT || 5000;
